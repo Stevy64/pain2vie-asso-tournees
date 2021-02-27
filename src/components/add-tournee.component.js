@@ -24,7 +24,7 @@ const AddTournee = () => {
   const saveTournee = () => {
     var data = {
       ville: tournee.ville,
-      date: Moment().format("dddd Do/MM/YY HH:mm"),
+      date: Moment().format("Do/MM/YY HH:mm"),
       poids: tournee.poids,
       total: tournee.total,
       benevoles: tournee.benevoles,
