@@ -1,19 +1,3 @@
-# pain2vie-asso-tournees
-Web application for Pain2Vie Association build with React Js
-
-# To run the project
-1) Clone the repository
-2) cd pain2vie-asso-tournees/
-3) npm start
-4) npm run build
-
-# Then you will be able to deploy the App on Netlify as following
-1) npm install netlify-cli -g
-2) netlify deploy
-
-AND VOILA!
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
