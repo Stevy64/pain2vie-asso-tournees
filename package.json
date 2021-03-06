@@ -1,7 +1,7 @@
 {
   "name": "pain2vie-asso",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@capacitor/core": "^2.4.6",
