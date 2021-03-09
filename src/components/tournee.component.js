@@ -18,7 +18,7 @@ export default class Tournee extends Component {
     this.state = {
       currentTournee: {
         id: null,
-        date: Moment().format("dddd Do/MM/YYYY HH:mm"),
+        date: Moment().format("Do/MM/YYYY dddd à HH:mm"),
         ville: "",
         poids: "",
         total: 0,
