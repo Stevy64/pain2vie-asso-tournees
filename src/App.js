@@ -8,20 +8,20 @@ import TourneesList from "./components/tournees-list.component";
 
 function App() {
   return (
-    <div>
+    <div className="corpus">
       <nav className="navbar navbar-expand fixed-top navbar-dark bg-dark">
         <a href="/" className="navbar-brand">
-          Pain2Vie
+          <span className="logo">Pain2Vie</span>
         </a>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
             <Link to={"/tournees"} className="nav-link">
-              LISTE
+              <span className="menu">Liste</span>
             </Link>
           </li>
           <li className="nav-item">
             <Link to={"/ajouter"} className="nav-link">
-              NOUVEAU
+              <span className="menu">Nouveau</span>
             </Link>
           </li>
         </div>
