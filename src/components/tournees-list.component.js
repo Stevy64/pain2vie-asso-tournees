@@ -20,7 +20,7 @@ export default class TourneesList extends Component {
   }
 
   componentDidMount() {
-    this.unsubscribe = TourneeDataService.getAll().orderBy("date", "desc").onSnapshot(this.onDataChange);
+    this.unsubscribe = TourneeDataService.getAll().orderBy("date", "desc").limit(15).onSnapshot(this.onDataChange);
   }
 
   componentWillUnmount() {
@@ -70,6 +70,19 @@ export default class TourneesList extends Component {
     return (
       <div className="list row">
         <div className="col-md-6">
+          {currentTournee ? (
+            <Tournee
+              tournee={currentTournee}
+              refreshList={this.refreshList}
+            />
+          ) : (
+            <div>
+              <br />
+              <p className="lead">Veuillez sélectionner un élément de la liste ...</p>
+            </div>
+          )}
+        </div>
+        <div className="col-md-6">
           <h4>Tournées</h4>
 
           <ul className="list-group">
@@ -84,19 +97,6 @@ export default class TourneesList extends Component {
                 </li>
               ))}
           </ul>
-        </div>
-        <div className="col-md-6">
-          {currentTournee ? (
-            <Tournee
-              tournee={currentTournee}
-              refreshList={this.refreshList}
-            />
-          ) : (
-            <div>
-              <br />
-              <p className="lead">Veuillez sélectionner un élément de la liste ...</p>
-            </div>
-          )}
         </div>
       </div>
     );
